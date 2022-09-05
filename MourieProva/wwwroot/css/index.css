@@ -10,19 +10,18 @@
 /* Basics */
 
 body {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
     margin-right: 0px;
-    background-color: #f7eeb7;
     font-size: 13px;
     font-family: Arial, Helvetica, sans-serif;
     position: relative;
     bottom: 0;
     left: 0;
     color: #d15f54;
-    background-image: url("/img/NeroPietra.jpg");
+    background: #f7eeb7 url("/img/Yellow-Pink-upscale.jpg") fixed center no-repeat;
     /*    background-image: url("/img/DriftJL.png");
     background-color: white;
     height: 1920px;
@@ -50,6 +49,11 @@ body {
     position: relative;*/
 }
 
+@font-face {
+    font-family: PTMono-Regular;
+    src: url(/fonts/PTMono-Regular.ttf);
+}
+
 h1 {
     width: 100%;
     height: 100px;
@@ -61,39 +65,25 @@ h1 {
     pointer-events: none;
 }
 
+h1, h2, h3 {
+    font-family: PTMono-Regular;
+}
+
+p {
+    text-align: left;
+    font-size: 30px;
+    font-family: PTMono-Regular;
+}
+
 /* Navigation Button Alias NavBtn */
-
-div.AnimationBatMobile {
-    width: 100%;
-    height: 100px;
-    padding: 10px;
-}
-
-img.BMR {
-    width: 200px;
-    height: 80px;
-    animation: left-to-right 5s ease forwards infinite;
-}
-
-/* The animation code */
-@keyframes left-to-right {
-    from {
-        transform: translateX(-250px);
-    }
-
-    to {
-        transform: translateX(690%);
-        opacity: 0%;
-    }
-}
 
 tr.Top {
     width: 100%;
-    height: 500px;
+    height: 400px;
 }
 
 th.fullLenght {
-    width: 700px;
+    width: fit-content;
 }
 
 th.videoLenght {
@@ -107,7 +97,7 @@ iframe {
 h1.Mytitle {
     font-size: 90px;
     text-align: left;
-    margin-top: -310px;
+    margin-top: -75%;
 }
 
 ol.Socials {
@@ -125,20 +115,16 @@ ol.Navigation {
     text-align: right;
     list-style: none;
     font-size: 70px;
-    margin-top: -90px;
+    margin-top: -10%;
 }
 
 li.Navigation {
-    margin-right: 50px;
+    margin-right: 100px;
+    font-size: 60px;
 }
 
 article {
     padding-top: 50px;
-}
-
-p {
-    text-align: left;
-    font-size: 30px;
 }
 
 div.YouVideos {

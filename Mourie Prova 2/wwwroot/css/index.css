@@ -1,0 +1,148 @@
+
+/* All */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basics */
+
+body {
+    min-height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-right: 0px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    color: #d15f54;
+    background: #f7eeb7 url("/img/Yellow-Pink-1080-enlarged.jpg") fixed center no-repeat;
+    /*    background-image: url("/img/DriftJL.png");
+    background-color: white;
+    height: 1920px;
+    width: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;*/
+}
+
+.container {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0 30px;
+    margin-right: 0px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    /*background-image: url("/img/DriftJL.png");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;*/
+}
+
+@font-face {
+    font-family: PTMono-Regular;
+    src: url(/fonts/PTMono-Regular.ttf);
+}
+
+h1 {
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+    margin: 0;
+    color: #d15f54;
+    font-size: 30px;
+    text-align: center;
+    pointer-events: none;
+}
+
+h1, h2, h3 {
+    font-family: PTMono-Regular;
+}
+
+p {
+    text-align: left;
+    font-size: 30px;
+    font-family: PTMono-Regular;
+}
+
+table {
+    box-sizing: border-box;
+    width: 100%;
+    height: 400px;
+}
+
+th.fullLenght {
+    width: fit-content;
+    padding: 5% 0%;
+    /*border: 1px solid blue;*/
+}
+
+ol.Socials {
+    margin-top: 10%;
+    display: flex;
+    justify-items: center;
+    list-style: none;
+}
+
+li.Socials {
+    margin-right: 50px;
+}
+
+h1.Mytitle {
+    font-size: 150px;
+    text-align: left;
+    margin-top: -68%;
+    margin-left: -10%;
+}
+
+ol.Navigation {
+    text-align: right;
+    list-style: none;
+    font-size: 70px;
+    margin-top: -5%;
+    margin-right: -10%;
+}
+
+li.Navigation {
+    margin-right: 100px;
+    font-size: 60px;
+}
+
+ol.Navigation li a.navMA {
+    text-decoration: none !important;
+    text-align: center !important;
+    font-family: PTMono-Regular;
+    color: #ffffff !important;
+    border-radius: 10px !important;
+}
+
+    ol.Navigation li a.navMA:hover {
+        text-decoration: none !important;
+        background-color: #00000000 !important;
+        color: #f7eeb7 !important;
+        border-bottom: #d15f54 solid 2px !important;
+    }
+
+    /* To solve Border */
+    ol.Navigation li a.navMA:active {
+        background-color: #f7e78255;
+        color: #fff !important;
+        border: none !important;
+        border-radius: 90px !important;
+    }
+
+article {
+    width: 80%;
+    margin: 0% 20%;
+    /*border: 1px solid red;*/
+}

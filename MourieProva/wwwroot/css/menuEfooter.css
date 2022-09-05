@@ -12,7 +12,7 @@
 /* Basics */
 
 body {
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -25,14 +25,27 @@ body {
     color: #d15f54;
 }
 
-h1, h2, h3 {
-    font-family: 'JUSTICE LEAGUE';
+/*.BkgImg {
+    height: 100vh;
+    background-image: url("/img/Yellow-Pink-upscale.jpg");
+    background-color: #f7eeb7;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}*/
+
+@font-face {
+    font-family: PTMono-Regular;
+    src: url(/fonts/PTMono-Regular.ttf);
 }
 
-img.ban {
-    line-height: 70px;
-    height: 70px;
-    width: 70px;
+h1, h2, h3 {
+    font-family: PTMono-Regular;
+}
+
+p {
+    font-family: PTMono-Regular;
 }
 
 /* Navigation Bar Alias NavBar */
@@ -44,23 +57,14 @@ img.ban {
     top: 0;
 }*/
 
-form#LoutForm {
-    width: inherit !important;
-    height: inherit !important;
-    block-size: inherit !important;
-    display: inherit !important;
-}
-
-button.navMALout {
-    text-decoration: none;
-    background-color: #00000000;
-    color: none;
-    border: none !important;
-    border-radius: unset !important;
+img.nav-linktext-dark {
+    height: 100px;
+    width: 150px;
+    border: 1px solid red;
 }
 
 .logBar {
-    line-height: 70px;
+    line-height: 900px;
     margin: 0 auto;
     height: fit-content;
     block-size: fit-content;
@@ -74,7 +78,7 @@ ul {
 
     ul.logList {
         width: 100%;
-        height: 70px;
+        height: 90px;
         list-style-type: none;
         position: relative;
         text-align: center;
@@ -130,8 +134,7 @@ ul {
             border: #2f2f2f solid 2px !important;
         }*/
 
-    ul.logList li a.navMA,
-    button.navMALout {
+    ul.logList li a.navMA {
         text-decoration: none !important;
         text-align: center !important;
         font-size: 15px !important;
@@ -142,8 +145,7 @@ ul {
         border-radius: 10px !important;
     }
 
-        ul.logList li a.navMA:hover,
-        button.navMALout:hover {
+        ul.logList li a.navMA:hover {
             text-decoration: none !important;
             background-color: #00000000 !important;
             color: #dec709 !important;
@@ -151,8 +153,7 @@ ul {
         }
 
         /* To solve Border */
-        ul.logList li a.navMA:active,
-        button.navMALout:active {
+        ul.logList li a.navMA:active {
             background-color: #00000055 !important;
             color: #fff !important;
             border: none !important;
@@ -180,8 +181,8 @@ div.scritta {
 
 footer, div.navbar-collapse {
     width: 100% !important;
-    height: 70px !important;
-    background-color: #f7eec7 !important;
+    height: 90px !important;
+    background-color: #f7eec755;
 }
 
 footer {
@@ -215,3 +216,8 @@ footer {
     footer div:active, footer div a:active {
         color: #fff !important;
     }
+
+
+@media all and (max-width: 720px) {
+
+}

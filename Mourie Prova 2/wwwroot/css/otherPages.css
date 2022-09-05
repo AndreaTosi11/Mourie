@@ -1,0 +1,94 @@
+
+/* All */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Basics */
+
+body {
+    min-height: 100vh;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+    margin-right: 0px;
+    font-size: 13px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    color: #d15f54;
+    background: #f7eeb7 url("/img/Yellow-Pink-upscale.jpg") fixed center no-repeat;
+    /*    background-image: url("/img/DriftJL.png");
+    background-color: white;
+    height: 1920px;
+    width: 1080px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;*/
+}
+
+.container {
+    min-height: 100%;
+    min-width: 100%;
+    margin: 0;
+    padding: 0 30px;
+    margin-right: 0px;
+    position: relative;
+    bottom: 0;
+    left: 0;
+    /*background-image: url("/img/DriftJL.png");
+    background-color: white;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;*/
+}
+
+@font-face {
+    font-family: PTMono-Regular;
+    src: url(/fonts/PTMono-Regular.ttf);
+}
+
+h1 {
+    width: 100%;
+    height: 100px;
+    padding: 30px;
+    margin: 0;
+    color: #d15f54;
+    font-size: 90px !important;
+    text-align: center;
+    pointer-events: none;
+}
+
+h1, h2, h3 {
+    font-family: PTMono-Regular;
+}
+
+p {
+    font-size: 50px;
+    text-decoration: none !important;
+    text-align: center !important;
+    font-family: PTMono-Regular;
+    color: #d15f54 !important;
+    border-radius: 10px !important;
+}
+
+    a.Mail:hover {
+        text-decoration: none !important;
+        background-color: #00000000 !important;
+        color: #f7eeb7 !important;
+        border-bottom: #d15f54 solid 2px !important;
+    }
+
+    /* To solve Border */
+    a.Mail:active {
+        background-color: #f7e78255;
+        color: #fff !important;
+        border: none !important;
+        border-radius: 90px !important;
+    }
